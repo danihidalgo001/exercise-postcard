@@ -1,0 +1,82 @@
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(64, 62, 62);
+
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  padding-bottom: 50px;
+  width: 490px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container > div {
+  width: 100%;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: start;
+  align-items: center;
+}
+  .head-title h1 {
+    font-weight: 400;
+  }
+  .head-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+  .article-text p {
+    text-align: justify;
+    font-weight: 500;
+  }
+  .article-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+    .article-user-info input {
+      border: none;
+      border-bottom: 1px solid rgba(130, 130, 130, 0.3);
+      transition-duration: .4s;
+    }
+    .article-user-info input:focus {
+      outline: none;
+      border-bottom: 1px solid rgba(130, 130, 130, 0.8);
+    }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .footer > button {
+    font-family: "Playpen Sans", cursive;
+    font-weight: 500;
+    background-color: rgb(193, 193, 193);
+    border: none;
+    padding: 5px;
+    transition-duration: .4s;
+  }
+  .footer > button:hover {
+    background-color: rgba(153, 152, 152, 0.8);
+  }
